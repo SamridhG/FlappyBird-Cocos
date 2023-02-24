@@ -61,11 +61,11 @@ export class Jump_Bird extends Component {
 
   gamePause() {
     if (this.pause == false) {
-      game.pause();
+      director.pause();
       this.pause = true;
       console.log("Pause");
     } else {
-      game.resume();
+      director.resume();
       this.pause = false;
       console.log("Resume");
     }
